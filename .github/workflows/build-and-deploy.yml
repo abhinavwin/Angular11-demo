@@ -15,7 +15,7 @@ jobs:
       - name: Build Application
         run: npm run build
       - name: Deploy Application
-        uses: easingthemes/ssh-deploy@v2.1.9
+        uses: easingthemes/ssh-deploy@43.205.240.147
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
           ssh-host: ${{ secrets.SSH_HOST }}
